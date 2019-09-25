@@ -1,24 +1,16 @@
-collections:
-      authors: 
-              output: true
-defaults:
-      - scope:
-          path: ""
-          type: "authors"
-          values:
-          layout: "author"
-      - scope:
-          path: ""
-          type: "posts"
-          values:
-          layout: "post"
-      - scope:
-          path: ""
-          values:
-          layout: "default"
+# Site Settings
+title: Start Jekyll
+email: swapnabulbule@gmail.com
+description: >
+ A guide to getting started with Jekyll.
+baseurl: ''
+url: 'https://swapnabulbule.github.io'
+#twitter_username: taniarascia
+github_username: swapnabulbule
 
-plugins:
-      - jekyll-feed
-      - jekyll-sitemap
-      - jekyll-seo-tag
-
+# Build Settings
+sass:
+ sass_dir: _sass
+include: ['_pages']
+kramdown:
+ input: GFM
